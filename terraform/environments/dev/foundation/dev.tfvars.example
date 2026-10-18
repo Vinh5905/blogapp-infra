@@ -1,0 +1,6 @@
+# Đối chiếu AZ với account thật trước khi dùng.
+availability_zones = ["ap-southeast-1a", "ap-southeast-1b"]
+
+# Mặc định API NLB chỉ nhận từ SG node/automation; chưa có VPN thì để rỗng.
+# Nếu có VPN, dùng CIDR nguồn thực tế quan sát được và kiểm route tới NLB.
+api_allowed_ipv4_cidrs = []

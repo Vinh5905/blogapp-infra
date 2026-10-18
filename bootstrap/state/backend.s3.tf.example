@@ -1,0 +1,5 @@
+# Chỉ copy đè backend.tf SAU khi tạo bucket/KMS và sinh backend.hcl.
+# Đuôi .example khiến Terraform bỏ qua file này trong lần init đầu.
+terraform {
+  backend "s3" {}
+}
